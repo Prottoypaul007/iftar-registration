@@ -24,8 +24,8 @@ export default function RegistrationForm() {
     setStatus({ loading: true, error: null, success: false });
 
     try {
-      const response = await fetch('https://iftar-registration.onrender.com', {
-        method: 'POST',
+const response = await fetch('https://iftar-registration.onrender.com/api/register', {
+          method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
