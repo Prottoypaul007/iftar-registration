@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="description" content="SSC Batch 2021 Iftar Mahfil Registration" />
+    <title>Iftar Registration | SSC Batch 2021</title>
+
+    <!-- Google Fonts - Enhanced for Bangla, English, and Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Amiri:wght@400;700&family=Scheherazade+New:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              bangla: ['Hind Siliguri', 'Noto Sans Bengali', 'sans-serif'],
+              arabic: ['Amiri', 'Scheherazade New', 'serif'],
+              mono: ['Space Mono', 'monospace'],
+            },
+            colors: {
+              ramadan: {
+                dark: '#0f172a',
+                mid: '#1e293b',
+                gold: '#d4a017',
+                green: '#14532d',
+                cream: '#fdfaf5',
+              },
+            },
+            backgroundImage: {
+              'iftar-gradient': 'linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #14532d 100%)',
+              'gold-glow': 'radial-gradient(circle at top right, rgba(212,160,23,0.15), transparent 60%)',
+            },
+            boxShadow: {
+              'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.25)',
+              'gold-sm': '0 4px 15px -2px rgba(212,160,23,0.25)',
+            },
+            typography: (theme) => ({
+              DEFAULT: {
+                css: {
+                  '--tw-prose-body': theme('colors.gray[300]'),
+                  '--tw-prose-headings': theme('colors.white'),
+                  '--tw-prose-lead': theme('colors.gray[400]'),
+                  '--tw-prose-links': theme('colors.ramadan.gold'),
+                  '--tw-prose-bold': theme('colors.white'),
+                  '--tw-prose-counters': theme('colors.gray[500]'),
+                  '--tw-prose-bullets': theme('colors.gray[500]'),
+                  '--tw-prose-hr': theme('colors.gray[700]'),
+                  '--tw-prose-quotes': theme('colors.gray[400]'),
+                  '--tw-prose-quote-borders': theme('colors.ramadan.gold/30'),
+                  '--tw-prose-captions': theme('colors.gray[500]'),
+                  '--tw-prose-code': theme('colors.ramadan.gold'),
+                  '--tw-prose-pre-code': theme('colors.gray[200]'),
+                  '--tw-prose-pre-bg': theme('colors.gray[800]'),
+                  '--tw-prose-th-borders': theme('colors.gray[700]'),
+                  '--tw-prose-td-borders': theme('colors.gray[700]'),
+                },
+              },
+            }),
+          },
+        },
+        plugins: [require('@tailwindcss/typography')],
+      }
+    </script>
+
+    <style>
+      :root {
+        --font-primary: 'Poppins', system-ui, sans-serif;
+        --font-bangla: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+        --font-arabic: 'Amiri', 'Scheherazade New', serif;
+        --font-mono: 'Space Mono', monospace;
+      }
+      body {
+        font-family: var(--font-primary);
+        background: linear-gradient(to bottom, #0f172a, #0f172a);
+        background-attachment: fixed;
+      }
+      .bangla-text {
+        font-family: var(--font-bangla);
+        line-height: 1.7;
+        letter-spacing: 0.02em;
+      }
+      .arabic-text {
+        font-family: var(--font-arabic);
+        line-height: 1.8;
+        direction: rtl;
+      }
+      .glow-gold {
+        text-shadow: 0 0 12px rgba(212,160,23,0.6);
+      }
+      .glass-card {
+        background: rgba(30, 41, 59, 0.45);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(212,160,23,0.12);
+      }
+      .prose {
+        max-width: none;
+      }
+      .prose p {
+        margin-bottom: 1.25em;
+      }
+      .prose h1, .prose h2, .prose h3 {
+        font-weight: 700;
+        letter-spacing: -0.025em;
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-iftar-gradient text-gray-100 antialiased">
+    <!-- Optional subtle overlay pattern (geometric islamic style) -->
+    <div class="fixed inset-0 pointer-events-none opacity-5 bg-[url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><path d=\"M50 0 L100 25 L100 75 L50 100 L0 75 L0 25 Z\" fill=\"none\" stroke=\"%23d4a017\" stroke-width=\"0.5\"/></svg>')]"></div>
+
+    <div class="relative min-h-screen flex items-center justify-center px-5 py-12 md:py-16">
+      <div class="glass-card rounded-2xl shadow-glass md:shadow-2xl p-6 md:p-10 max-w-lg w-full border border-ramadan-gold/20 bg-ramadan-mid/30">
+        
+        <!-- Header -->
+        <div class="text-center mb-8 md:mb-10 prose prose-invert">
+          <div class="inline-block px-5 py-1.5 rounded-full bg-ramadan-gold/10 border border-ramadan-gold/30 mb-4">
+            <span class="text-ramadan-gold font-medium text-sm tracking-wider">SSC Batch 2021</span>
+          </div>
+          <h1 class="text-3xl md:text-4xl font-bold text-white glow-gold !mt-0">
+            Iftar Mahfil Registration
+          </h1>
+          <p class="mt-3 text-gray-300 text-lg md:text-xl arabic-text">
+            رمضان مبارك – فلنتشارك فرحة الإفطار معاً
+          </p>
+          <p class="mt-2 text-gray-300 text-lg md:text-xl bangla-text">
+            রমজান মোবারক - আসুন একসাথে ইফতারের আনন্দ ভাগ করে নিই
+          </p>
+          <div class="w-16 h-1 bg-gradient-to-r from-ramadan-gold to-transparent mx-auto mt-5 rounded-full"></div>
+        </div>
+
+        <!-- This is where your React form will be mounted -->
+        <div id="root" class="space-y-6 prose prose-invert"></div>
+
+        <!-- Optional footer note -->
+        <div class="text-center mt-10 text-sm text-gray-400 prose prose-invert">
+          <p>May this gathering bring us closer in brotherhood and blessings</p>
+          <p class="mt-1 bangla-text">এই সমাবেশ আমাদের ভ্রাতৃত্ব এবং আশীর্বাদে আরও কাছাকাছি নিয়ে আসুক</p>
+          <p class="mt-1">© SSC Batch 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
