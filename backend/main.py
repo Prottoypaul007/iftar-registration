@@ -13,11 +13,12 @@ app = FastAPI()
 
 # Allow frontend to communicate with backend
 # Allow frontend to communicate with backend
+# Allow frontend to communicate with backend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173", 
-        "https://iftar-registration.vercel.app/" # <-- Add your Vercel URL!
+        "https://iftar-registration.vercel.app"
     ], 
     allow_credentials=True,
     allow_methods=["*"],
